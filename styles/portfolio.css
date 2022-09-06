@@ -1,0 +1,46 @@
+:root {
+  --title-color: #000000;
+  --text-main-color: #272142;
+  --text-secondary-color: rgba(39, 33, 66, 0.7);
+  --background-accent-color: #f9f7fe;
+  --accent-color: #6c63ff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-main-color);
+  font-weight: 400;
+}
+
+.hero {
+  background: var(--background-accent-color);
+  text-align: center;
+}
+.hero-pre-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.34;
+  color: var(--title-color);
+}
+
+.hero-text {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  padding: 18px 46px;
+  border-radius: 4px;
+  background: var(--accent-color);
+}
