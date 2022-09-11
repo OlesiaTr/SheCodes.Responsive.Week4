@@ -23,8 +23,8 @@ ul {
 }
 
 .header {
-  background: var(--background-accent-color);
-  padding-top: 40px;
+  background: #ffffff;
+  padding-top: 20px;
   padding-right: 140px;
   padding-left: 165px;
 }
@@ -58,7 +58,10 @@ ul {
 }
 
 .hero-title,
-.projects-title {
+.projects-title,
+.about-title,
+.work-title,
+.contact-title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   color: var(--title-color);
@@ -151,6 +154,50 @@ ul {
   color: var(--accent-color);
 }
 
+.about {
+  padding-top: 155px;
+  padding-bottom: 200px;
+}
+
+.about-title,
+.work-title,
+.contact-title {
+  font-size: 64px;
+  line-height: 1.33;
+}
+
+.about-posttitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.about-desc {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-secondary-color);
+}
+
+.work .row {
+  text-align: center;
+}
+
+.work,
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.work-posttitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--title-color);
+}
+
+.work-desc {
+  font-size: 14px;
+  color: var(--text-secondary-color);
+}
+
 @media (max-width: 960px) {
   .header {
     padding: 10px;
@@ -191,5 +238,42 @@ ul {
   .inquiry .container {
     padding: 40px 0px 40px;
     margin-bottom: 40px;
+  }
+
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .about-posttitle {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .work,
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .work-title,
+  .contact-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .work-posttitle {
+    font-size: 20px;
+  }
+
+  .work-desc {
+    font-size: 12px;
   }
 }
