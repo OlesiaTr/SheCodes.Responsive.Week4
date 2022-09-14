@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Patricia is a front-end developer, based in Portugal."
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -34,7 +39,7 @@
       src="https://kit.fontawesome.com/b5440aed4d.js"
       crossorigin="anonymous"
     ></script>
-    <title>Portfolio</title>
+    <title>Front-end developer - Patricia Pereira</title>
     <link rel="stylesheet" href="styles/portfolio.css" />
   </head>
   <body>
@@ -42,12 +47,18 @@
       <header class="header">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img
-                src="imgs/sheCodes-x1.png"
-                alt="SheCodes Logo"
-                class="nav-logo"
-            /></a>
+            <a class="navbar-brand" href="./index.html"
+              ><picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./imgs/sheCodes-x1.png 1x, ./imgs/sheCodes-x2.png 2x"
+                  type="image/png" />
+                <img
+                  src="imgs/sheCodes-x1.png"
+                  alt="SheCodes Logo"
+                  class="nav-logo"
+              /></picture>
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -62,18 +73,31 @@
             <div class="collapse navbar-collapse nav-list" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    title="Homepage"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About</a>
+                  <a class="nav-link" href="./about.html" title="About Patricia"
+                    >About</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./work.html">Work</a>
+                  <a class="nav-link" href="./work.html" title="Patricia's work"
+                    >Work</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contact.html">Contact</a>
+                  <a
+                    class="nav-link"
+                    href="./contact.html"
+                    title="Contact Patricia"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
@@ -85,7 +109,7 @@
           <h2 class="hero-pre-title">Hi I am</h2>
           <h1 class="hero-title">Patricia Pereira</h1>
           <p class="hero-text">Frontend Developer, based in Portugal.</p>
-          <button class="btn primary-btn">Get Started</button>
+          <button class="btn primary-btn" type="button">Get Started</button>
         </div>
       </section>
       <section class="projects">
@@ -95,7 +119,16 @@
           </h3>
           <div class="row mb-3 mb-md-5">
             <div class="col d-none d-lg-block">
-              <img src="imgs/yogurt-x1.png" alt="yoga app" class="img-fluid" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./imgs/yogurt-x1.png 1x, ./imgs/yogurt-x2.png 2x"
+                  type="image/png" />
+                <img
+                  src="imgs/yogurt-x1.png"
+                  alt="yogurt project preview"
+                  class="img-fluid"
+              /></picture>
             </div>
             <div class="col">
               <h2 class="mb-3 projects-title">Yogurt Project</h2>
@@ -106,7 +139,7 @@
                 a large language ocean. A small river named Duden flows by
               </p>
               <div class="mb-5">
-                <a href="#" class="projects-btn" title="Yoga project"
+                <a href="./work.html" class="projects-btn" title="Yoga project"
                   >View detail project</a
                 >
               </div>
@@ -122,22 +155,42 @@
                 a large language ocean. A small river named Duden flows by
               </p>
               <div class="mb-5">
-                <a href="#" class="projects-btn" title="Weather project"
+                <a
+                  href="./work.html"
+                  class="projects-btn"
+                  title="Weather project"
                   >View detail project</a
                 >
               </div>
             </div>
             <div class="col d-none d-lg-block">
-              <img src="imgs/weather-x1.png" alt="yoga app" class="img-fluid" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="./imgs/weather-x1.png 1x, ./imgs/weather-x2.png 2x"
+                  type="image/png" />
+                <img
+                  src="imgs/weather-x1.png"
+                  alt="weather project preview"
+                  class="img-fluid"
+              /></picture>
             </div>
           </div>
           <div class="row">
             <div class="col d-none d-lg-block">
-              <img
-                src="imgs/dictionary-x1.png"
-                alt="yoga app"
-                class="img-fluid"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./imgs/dictionary-x1.png 1x,
+                    ./imgs/dictionary-x2.png 2x
+                  "
+                  type="image/png" />
+                <img
+                  src="imgs/dictionary-x1.png"
+                  alt="Dictionary project preview"
+                  class="img-fluid"
+              /></picture>
             </div>
             <div class="col">
               <h2 class="mb-3 projects-title">Dictionary App</h2>
@@ -148,7 +201,10 @@
                 a large language ocean. A small river named Duden flows by
               </p>
               <div>
-                <a href="#" class="projects-btn" title="Yogurt project"
+                <a
+                  href="./work.html"
+                  class="projects-btn"
+                  title="Yogurt project"
                   >View detail project</a
                 >
               </div>
@@ -163,30 +219,41 @@
             <p>Let’s work together and I’ll help you by all my best</p>
           </div>
           <div class="col-sm-6">
-            <button class="btn primary-btn inq-btn">Let’s talk here</button>
+            <button class="btn primary-btn inq-btn" type="button">
+              Let’s talk here
+            </button>
           </div>
         </div>
       </section>
       <footer class="footer">
         <div class="container">
           <h2 class="footer-title">youremail@gmail.com</h2>
-          <ul class="footer-list">
+          <ul class="footer-list mb-5">
             <li class="footer-item">
-              <a href="#" class="footer-link">
+              <a href="#" class="footer-link" title="Facebook profile">
                 <i class="fa-brands fa-facebook-f" width="40px"></i
               ></a>
             </li>
             <li class="footer-item">
-              <a href="#" class="footer-link"
+              <a href="#" class="footer-link" title="Twitter profile"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </li>
             <li class="footer-item">
-              <a href="#" class="footer-link"
+              <a href="#" class="footer-link" title="Instagram profile"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </li>
           </ul>
+          <p class="text-center">
+            This project was coded by Olesia Trebina, and it is
+            <a
+              href="https://github.com/OlesiaTr/SheCodes.Responsive.Week4"
+              title="Github page of the code"
+              target="_blank"
+              >open-sourced</a
+            >
+          </p>
         </div>
       </footer>
     </main>
